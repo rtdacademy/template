@@ -19,22 +19,10 @@
           "description": "Introduction to CALM 20 and personal wellness concepts"
         },
         {
-          "id": "unit1-quiz1",
-          "title": "Lesson 1 Introduction Assessment",
-          "type": "quiz",
-          "description": "Assessment for Introduction lesson"
-        },
-        {
           "id": "unit1-lesson2",
           "title": "Physical Wellness",
           "type": "lesson",
           "description": "Understanding and implementing physical wellness strategies"
-        },
-        {
-          "id": "unit1-quiz2",
-          "title": "Lesson 2 Physical Wellness Assessment",
-          "type": "quiz",
-          "description": "Assessment for Physical Wellness lesson"
         },
         {
           "id": "unit1-lesson3",
@@ -43,22 +31,10 @@
           "description": "Developing mindfulness practices and cultivating gratitude"
         },
         {
-          "id": "unit1-quiz3",
-          "title": "Lesson 3 Mindfulness and Gratitude Assessment",
-          "type": "quiz",
-          "description": "Assessment for Mindfulness and Gratitude lesson"
-        },
-        {
           "id": "unit1-lesson4",
           "title": "Emotional and Spiritual Wellness",
           "type": "lesson",
           "description": "Exploring emotional intelligence and spiritual wellness"
-        },
-        {
-          "id": "unit1-quiz4",
-          "title": "Lesson 4 Emotional and Spiritual Wellness Assessment",
-          "type": "quiz",
-          "description": "Assessment for Emotional and Spiritual Wellness lesson"
         },
         {
           "id": "unit1-lesson5",
@@ -67,34 +43,16 @@
           "description": "Building happiness and developing resilience skills"
         },
         {
-          "id": "unit1-quiz5",
-          "title": "Lesson 5 Happiness and Resiliency Assessment",
-          "type": "quiz",
-          "description": "Assessment for Happiness and Resiliency lesson"
-        },
-        {
           "id": "unit1-lesson6",
-          "title": "Wellness Pitfalls Drugs and Addiction",
+          "title": "Wellness Pitfalls - Drugs and Addiction",
           "type": "lesson",
           "description": "Understanding substance abuse and addiction prevention"
-        },
-        {
-          "id": "unit1-quiz6",
-          "title": "Lesson 6 Drugs and Addiction Assessment",
-          "type": "quiz",
-          "description": "Assessment for Drugs and Addiction lesson"
         },
         {
           "id": "unit1-lesson7",
           "title": "Healthy Relationships",
           "type": "lesson",
           "description": "Building and maintaining healthy relationships"
-        },
-        {
-          "id": "unit1-quiz7",
-          "title": "Lesson 7 Relationships Assessment",
-          "type": "quiz",
-          "description": "Assessment for Healthy Relationships lesson"
         },
         {
           "id": "unit1-assignment1",
@@ -116,22 +74,10 @@
           "description": "Developing intellectual wellness and success strategies"
         },
         {
-          "id": "unit2-quiz1",
-          "title": "Lesson 8 Intellectual Wellness and Success Assessment",
-          "type": "quiz",
-          "description": "Assessment for Intellectual Wellness lesson"
-        },
-        {
           "id": "unit2-lesson2",
           "title": "Getting Organized",
           "type": "lesson",
           "description": "Organization skills for academic and professional success"
-        },
-        {
-          "id": "unit2-quiz2",
-          "title": "Lesson 9 Getting Organized Assessment",
-          "type": "quiz",
-          "description": "Assessment for Getting Organized lesson"
         },
         {
           "id": "unit2-lesson3",
@@ -140,22 +86,10 @@
           "description": "Exploring career paths and development strategies"
         },
         {
-          "id": "unit2-quiz3",
-          "title": "Lesson 10 Career Development Assessment",
-          "type": "quiz",
-          "description": "Assessment for Career Development lesson"
-        },
-        {
           "id": "unit2-lesson4",
           "title": "Finding a Job",
           "type": "lesson",
           "description": "Job search strategies and techniques"
-        },
-        {
-          "id": "unit2-quiz4",
-          "title": "Lesson 11 Finding a Job Assessment",
-          "type": "quiz",
-          "description": "Assessment for Finding a Job lesson"
         },
         {
           "id": "unit2-lesson5",
@@ -164,26 +98,14 @@
           "description": "Creating professional resumes and cover letters"
         },
         {
-          "id": "unit2-quiz5",
-          "title": "Lesson 12 Resume and Cover Letter Assessment",
-          "type": "quiz",
-          "description": "Assessment for Resume and Cover Letter lesson"
-        },
-        {
           "id": "unit2-lesson6",
           "title": "Preparing for an Interview",
           "type": "lesson",
           "description": "Interview preparation and techniques"
         },
         {
-          "id": "unit2-quiz6",
-          "title": "Lesson 13 Interview Preparation Assessment",
-          "type": "quiz",
-          "description": "Assessment for Interview Preparation lesson"
-        },
-        {
           "id": "unit2-assignment1",
-          "title": "Assignment 2 Career Portfolio",
+          "title": "Unit 2 Assignment",
           "type": "assignment",
           "description": "Unit 2 assignment on career development and job preparation"
         }
@@ -201,46 +123,22 @@
           "description": "Introduction to financial literacy and wellness concepts"
         },
         {
-          "id": "unit3-quiz1",
-          "title": "Lesson 14 Financial Literacy Assessment",
-          "type": "quiz",
-          "description": "Assessment for Financial Literacy and Wellness lesson"
-        },
-        {
           "id": "unit3-lesson2",
           "title": "Financial Planning",
           "type": "lesson",
           "description": "Creating and implementing financial plans"
         },
         {
-          "id": "unit3-quiz2",
-          "title": "Lesson 15 Financial Planning Assessment",
-          "type": "quiz",
-          "description": "Assessment for Financial Planning lesson"
-        },
-        {
           "id": "unit3-lesson3",
-          "title": "Banking Credit and Debt",
+          "title": "Banking, Credit, and Debt",
           "type": "lesson",
           "description": "Understanding banking services, credit, and debt management"
         },
         {
-          "id": "unit3-quiz3",
-          "title": "Lesson 16 Banking and Credit Assessment",
-          "type": "quiz",
-          "description": "Assessment for Banking, Credit, and Debt lesson"
-        },
-        {
           "id": "unit3-lesson4",
-          "title": "Training Student Loans and Scholarships",
+          "title": "Training, Student Loans, and Scholarships",
           "type": "lesson",
           "description": "Education funding options and financial aid"
-        },
-        {
-          "id": "unit3-quiz4",
-          "title": "Lesson 17 Student Loans and Scholarships Assessment",
-          "type": "quiz",
-          "description": "Assessment for Training and Financial Aid lesson"
         },
         {
           "id": "unit3-lesson5",
@@ -249,78 +147,30 @@
           "description": "Introduction to investing and insurance basics"
         },
         {
-          "id": "unit3-quiz5",
-          "title": "Lesson 18 Investing and Insurance Assessment",
-          "type": "quiz",
-          "description": "Assessment for Investing and Insurance lesson"
-        },
-        {
           "id": "unit3-lesson6",
           "title": "Consumer Protection and Safety",
           "type": "lesson",
           "description": "Consumer rights and safety awareness"
         },
         {
-          "id": "unit3-quiz6",
-          "title": "Lesson 19 Consumer Protection Assessment",
-          "type": "quiz",
-          "description": "Assessment for Consumer Protection and Safety lesson"
+          "id": "unit3-assignment1",
+          "title": "Unit 3 Assignment - Financial Planning",
+          "type": "assignment",
+          "description": "Comprehensive financial planning assignment"
         },
         {
           "id": "unit3-lesson7",
-          "title": "Housing",
+          "title": "Housing and Choosing a Home",
           "type": "lesson",
           "description": "Housing options and choosing a home"
-        },
-        {
-          "id": "unit3-quiz7",
-          "title": "Lesson 20 Housing Assessment",
-          "type": "quiz",
-          "description": "Assessment for Housing lesson"
-        },
-        {
-          "id": "unit3-assignment1",
-          "title": "Assignment 3 Financial Planning",
-          "type": "assignment",
-          "description": "Comprehensive financial planning assignment"
         }
       ]
     },
     {
       "id": "unit-4",
-      "title": "Unit 4: Course Introduction and Final Assessment",
-      "description": "Course overview materials and final examination",
+      "title": "Final Exam (Including Practice)",
+      "description": "Final assessment and practice exam",
       "lessons": [
-        {
-          "id": "unit4-lesson1",
-          "title": "Course Overview and Resources",
-          "type": "lesson",
-          "description": "CALM 20 general information, course outline, and important links"
-        },
-        {
-          "id": "unit4-lesson2",
-          "title": "New Students START HERE",
-          "type": "lesson",
-          "description": "Orientation for new students including E-Learning & LMS introduction"
-        },
-        {
-          "id": "unit4-lesson3",
-          "title": "Accessing Course Materials",
-          "type": "lesson",
-          "description": "How to access lessons, homework, and assignments"
-        },
-        {
-          "id": "unit4-lesson4",
-          "title": "Communication and Support",
-          "type": "lesson",
-          "description": "Communicating with your teacher and getting learning support"
-        },
-        {
-          "id": "unit4-lesson5",
-          "title": "Exam Procedures",
-          "type": "lesson",
-          "description": "Booking and writing section exams during online meetings"
-        },
         {
           "id": "unit4-quiz1",
           "title": "Practice Final Exam",

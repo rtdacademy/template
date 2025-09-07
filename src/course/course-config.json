@@ -1,181 +1,187 @@
 {
   "courseInfo": {
-    "title": "Introduction to Web Development",
-    "description": "A comprehensive course covering HTML, CSS, and JavaScript fundamentals",
-    "instructor": "Your Name",
-    "duration": "12 weeks",
-    "level": "Beginner"
+    "title": "CALM 20 - Career and Life Management",
+    "description": "General Information and Life Skills Development",
+    "instructor": "Your Instructor Name",
+    "duration": "Full Semester",
+    "level": "Grade 11"
   },
   "units": [
     {
       "id": "unit-1",
-      "title": "Unit 1: HTML Fundamentals",
-      "description": "Learn the building blocks of web pages with HTML",
+      "title": "Unit 1: Personal Choices",
+      "description": "Explore personal wellness, mindfulness, relationships, and healthy lifestyle choices",
       "lessons": [
         {
           "id": "unit1-lesson1",
-          "title": "Introduction to HTML",
+          "title": "Introduction",
           "type": "lesson",
-          "description": "Understanding HTML structure and basic tags"
+          "description": "Introduction to CALM 20 and personal wellness concepts"
         },
         {
           "id": "unit1-lesson2",
-          "title": "HTML Elements and Attributes",
+          "title": "Physical Wellness",
           "type": "lesson",
-          "description": "Learn about different HTML elements and their attributes"
+          "description": "Understanding and implementing physical wellness strategies"
         },
         {
           "id": "unit1-lesson3",
-          "title": "Forms and Input Elements",
+          "title": "Mindfulness and Gratitude",
           "type": "lesson",
-          "description": "Creating interactive forms with HTML"
+          "description": "Developing mindfulness practices and cultivating gratitude"
+        },
+        {
+          "id": "unit1-lesson4",
+          "title": "Emotional and Spiritual Wellness",
+          "type": "lesson",
+          "description": "Exploring emotional intelligence and spiritual wellness"
+        },
+        {
+          "id": "unit1-lesson5",
+          "title": "Happiness and Resiliency",
+          "type": "lesson",
+          "description": "Building happiness and developing resilience skills"
+        },
+        {
+          "id": "unit1-lesson6",
+          "title": "Wellness Pitfalls - Drugs and Addiction",
+          "type": "lesson",
+          "description": "Understanding substance abuse and addiction prevention"
+        },
+        {
+          "id": "unit1-lesson7",
+          "title": "Healthy Relationships",
+          "type": "lesson",
+          "description": "Building and maintaining healthy relationships"
         },
         {
           "id": "unit1-assignment1",
-          "title": "Build Your First Webpage",
+          "title": "CALM 20 Assignment 1",
           "type": "assignment",
-          "description": "Create a personal portfolio page using HTML"
-        },
-        {
-          "id": "unit1-quiz1",
-          "title": "HTML Basics Quiz",
-          "type": "quiz",
-          "description": "Test your knowledge of HTML fundamentals"
+          "description": "Unit 1 comprehensive assignment on personal choices and wellness"
         }
       ]
     },
     {
       "id": "unit-2",
-      "title": "Unit 2: CSS Styling",
-      "description": "Master the art of styling web pages with CSS",
+      "title": "Unit 2: Career and Pathway Choices",
+      "description": "Career development, job search skills, and professional preparation",
       "lessons": [
         {
           "id": "unit2-lesson1",
-          "title": "Introduction to CSS",
+          "title": "Intellectual Wellness",
           "type": "lesson",
-          "description": "Understanding CSS syntax and selectors"
+          "description": "Developing intellectual wellness and success strategies"
         },
         {
           "id": "unit2-lesson2",
-          "title": "Box Model and Layout",
+          "title": "Getting Organized",
           "type": "lesson",
-          "description": "Learn about the CSS box model and page layouts"
+          "description": "Organization skills for academic and professional success"
         },
         {
           "id": "unit2-lesson3",
-          "title": "Flexbox and Grid",
+          "title": "Career Development",
           "type": "lesson",
-          "description": "Modern layout techniques with Flexbox and CSS Grid"
+          "description": "Exploring career paths and development strategies"
         },
         {
           "id": "unit2-lesson4",
-          "title": "Responsive Design",
+          "title": "Finding a Job",
           "type": "lesson",
-          "description": "Creating mobile-friendly responsive layouts"
+          "description": "Job search strategies and techniques"
+        },
+        {
+          "id": "unit2-lesson5",
+          "title": "Preparing a Resume and Cover Letter",
+          "type": "lesson",
+          "description": "Creating professional resumes and cover letters"
+        },
+        {
+          "id": "unit2-lesson6",
+          "title": "Preparing for an Interview",
+          "type": "lesson",
+          "description": "Interview preparation and techniques"
         },
         {
           "id": "unit2-assignment1",
-          "title": "Style Your Portfolio",
+          "title": "Unit 2 Assignment",
           "type": "assignment",
-          "description": "Apply CSS styling to your HTML portfolio"
-        },
-        {
-          "id": "unit2-quiz1",
-          "title": "CSS Properties Quiz",
-          "type": "quiz",
-          "description": "Test your CSS knowledge"
+          "description": "Unit 2 assignment on career development and job preparation"
         }
       ]
     },
     {
       "id": "unit-3",
-      "title": "Unit 3: JavaScript Basics",
-      "description": "Add interactivity to your web pages with JavaScript",
+      "title": "Unit 3: Resource Choices",
+      "description": "Financial literacy, planning, and consumer awareness",
       "lessons": [
         {
           "id": "unit3-lesson1",
-          "title": "JavaScript Fundamentals",
+          "title": "Financial Literacy and Wellness",
           "type": "lesson",
-          "description": "Variables, data types, and basic operators"
+          "description": "Introduction to financial literacy and wellness concepts"
         },
         {
           "id": "unit3-lesson2",
-          "title": "Functions and Scope",
+          "title": "Financial Planning",
           "type": "lesson",
-          "description": "Understanding functions, parameters, and scope"
+          "description": "Creating and implementing financial plans"
         },
         {
           "id": "unit3-lesson3",
-          "title": "Arrays and Objects",
+          "title": "Banking, Credit, and Debt",
           "type": "lesson",
-          "description": "Working with complex data structures"
+          "description": "Understanding banking services, credit, and debt management"
         },
         {
           "id": "unit3-lesson4",
-          "title": "DOM Manipulation",
+          "title": "Training, Student Loans, and Scholarships",
           "type": "lesson",
-          "description": "Interacting with HTML elements using JavaScript"
+          "description": "Education funding options and financial aid"
         },
         {
           "id": "unit3-lesson5",
-          "title": "Events and Event Handlers",
+          "title": "Investing and Insurance",
           "type": "lesson",
-          "description": "Handling user interactions with JavaScript"
+          "description": "Introduction to investing and insurance basics"
+        },
+        {
+          "id": "unit3-lesson6",
+          "title": "Consumer Protection and Safety",
+          "type": "lesson",
+          "description": "Consumer rights and safety awareness"
         },
         {
           "id": "unit3-assignment1",
-          "title": "Interactive Calculator",
+          "title": "Unit 3 Assignment - Financial Planning",
           "type": "assignment",
-          "description": "Build a functional calculator with JavaScript"
+          "description": "Comprehensive financial planning assignment"
         },
         {
-          "id": "unit3-quiz1",
-          "title": "JavaScript Fundamentals Quiz",
-          "type": "quiz",
-          "description": "Test your JavaScript knowledge"
-        },
-        {
-          "id": "unit3-exam1",
-          "title": "Midterm Exam",
-          "type": "exam",
-          "description": "Comprehensive exam covering Units 1-3"
+          "id": "unit3-lesson7",
+          "title": "Housing and Choosing a Home",
+          "type": "lesson",
+          "description": "Housing options and choosing a home"
         }
       ]
     },
     {
       "id": "unit-4",
-      "title": "Unit 4: Advanced JavaScript",
-      "description": "Deep dive into advanced JavaScript concepts",
+      "title": "Final Exam (Including Practice)",
+      "description": "Final assessment and practice exam",
       "lessons": [
         {
-          "id": "unit4-lesson1",
-          "title": "Asynchronous JavaScript",
-          "type": "lesson",
-          "description": "Promises, async/await, and AJAX"
-        },
-        {
-          "id": "unit4-lesson2",
-          "title": "ES6+ Features",
-          "type": "lesson",
-          "description": "Modern JavaScript features and syntax"
-        },
-        {
-          "id": "unit4-lesson3",
-          "title": "Local Storage and APIs",
-          "type": "lesson",
-          "description": "Working with browser storage and external APIs"
-        },
-        {
-          "id": "unit4-assignment1",
-          "title": "Weather App Project",
-          "type": "assignment",
-          "description": "Build a weather app using an API"
+          "id": "unit4-quiz1",
+          "title": "Practice Final Exam",
+          "type": "quiz",
+          "description": "Practice exam to prepare for the final assessment"
         },
         {
           "id": "unit4-exam1",
-          "title": "Final Exam",
+          "title": "CALM 20 Final Exam",
           "type": "exam",
-          "description": "Comprehensive final exam covering all units"
+          "description": "Comprehensive final exam covering all course material (10% of grade)"
         }
       ]
     }

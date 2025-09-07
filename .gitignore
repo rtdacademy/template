@@ -45,3 +45,7 @@ desktop.ini
 *.tmp
 *.temp
 .cache
+ 
+# Windows reserved-name artifacts
+# Occasionally tools can surface pseudo-paths like CON; ensure Git ignores them.
+CON
