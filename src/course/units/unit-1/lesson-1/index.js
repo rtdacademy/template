@@ -36,7 +36,7 @@ const IntroductiontoHTML = () => {
           <pre className="text-gray-800">
 {`// Add code examples here
 const example = "Hello World";
-console.log(example);`}
+console.log(example);L`}
           </pre>
         </div>
       </section>
