@@ -1,0 +1,55 @@
+ASSESSMENT QUESTIONS - Unit 1, Lesson 1: Introduction to HTML
+============================================================
+
+MULTIPLE CHOICE QUESTIONS:
+--------------------------
+
+Question 1:
+[Question text]
+a) [Option A]
+b) [Option B]  [CORRECT]
+c) [Option C]
+d) [Option D]
+
+Feedback for correct: [Positive feedback]
+Feedback for incorrect: [Helpful feedback]
+
+---
+
+Question 2:
+[Question text]
+a) [Option A]
+b) [Option B]
+c) [Option C]  [CORRECT]
+d) [Option D]
+
+Feedback for correct: [Positive feedback]
+Feedback for incorrect: [Helpful feedback]
+
+---
+
+SHORT ANSWER QUESTIONS:
+-----------------------
+
+Question 1:
+[Question text]
+
+Sample Answer:
+[Expected answer]
+
+---
+
+PRACTICAL EXERCISE:
+------------------
+
+Exercise 1: [Exercise Title]
+[Exercise instructions]
+
+---
+
+DISCUSSION QUESTIONS:
+--------------------
+
+1. [Discussion question 1]
+2. [Discussion question 2]
+3. [Discussion question 3]

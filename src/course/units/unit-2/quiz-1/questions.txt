@@ -1,0 +1,47 @@
+QUIZ QUESTIONS - Unit 2, Quiz 1: CSS Properties Quiz
+============================================================
+
+QUIZ SETTINGS:
+- Time Limit: [e.g., 30 minutes]
+- Number of Questions: [e.g., 10]
+- Points per Question: [e.g., 10]
+- Total Points: [e.g., 100]
+- Passing Score: [e.g., 70%]
+
+QUESTIONS:
+----------
+
+Question 1:
+[Question text]
+a) [Option A]
+b) [Option B]  [CORRECT]
+c) [Option C]
+d) [Option D]
+
+Explanation: [Why this answer is correct]
+
+---
+
+Question 2:
+[Question text]
+a) [Option A]
+b) [Option B]
+c) [Option C]  [CORRECT]
+d) [Option D]
+
+Explanation: [Why this answer is correct]
+
+---
+
+Question 3:
+[Question text]
+a) [Option A]  [CORRECT]
+b) [Option B]
+c) [Option C]
+d) [Option D]
+
+Explanation: [Why this answer is correct]
+
+---
+
+[Add more questions as needed]

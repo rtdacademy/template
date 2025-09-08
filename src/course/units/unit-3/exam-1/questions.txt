@@ -1,0 +1,71 @@
+EXAM QUESTIONS - Unit 3, Exam 1: Midterm Exam
+============================================================
+
+EXAM INFORMATION:
+- Time Limit: 60 minutes
+- Total Questions: [Number]
+- Total Points: 100
+- Passing Score: 70%
+- Format: Closed book / Open book
+
+INSTRUCTIONS TO STUDENTS:
+- Read each question carefully
+- Manage your time wisely
+- Answer all questions
+- Review your answers before submitting
+
+SECTION A: MULTIPLE CHOICE (50 points)
+---------------------------------------
+[5 points each]
+
+Question 1:
+[Question text]
+a) [Option A]
+b) [Option B]  [CORRECT]
+c) [Option C]
+d) [Option D]
+
+Question 2:
+[Question text]
+a) [Option A]
+b) [Option B]
+c) [Option C]  [CORRECT]
+d) [Option D]
+
+[Continue for 10 questions]
+
+SECTION B: SHORT ANSWER (30 points)
+------------------------------------
+[10 points each]
+
+Question 11:
+[Question requiring 2-3 sentence answer]
+
+Expected Answer:
+[Model answer]
+
+Question 12:
+[Question requiring 2-3 sentence answer]
+
+Expected Answer:
+[Model answer]
+
+Question 13:
+[Question requiring 2-3 sentence answer]
+
+Expected Answer:
+[Model answer]
+
+SECTION C: ESSAY/LONG ANSWER (20 points)
+-----------------------------------------
+
+Question 14:
+[Essay question requiring detailed response]
+
+Grading Rubric:
+- Understanding of concept (10 points)
+- Application of knowledge (5 points)
+- Clear explanation (5 points)
+
+Model Answer:
+[Detailed model answer]

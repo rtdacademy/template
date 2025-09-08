@@ -1,0 +1,183 @@
+{
+  "courseInfo": {
+    "title": "Introduction to Web Development",
+    "description": "A comprehensive course covering HTML, CSS, and JavaScript fundamentals",
+    "instructor": "Your Name",
+    "duration": "12 weeks",
+    "level": "Beginner"
+  },
+  "units": [
+    {
+      "id": "unit-1",
+      "title": "Unit 1: HTML Fundamentals",
+      "description": "Learn the building blocks of web pages with HTML",
+      "lessons": [
+        {
+          "id": "unit1-lesson1",
+          "title": "Introduction to HTML",
+          "type": "lesson",
+          "description": "Understanding HTML structure and basic tags"
+        },
+        {
+          "id": "unit1-lesson2",
+          "title": "HTML Elements and Attributes",
+          "type": "lesson",
+          "description": "Learn about different HTML elements and their attributes"
+        },
+        {
+          "id": "unit1-lesson3",
+          "title": "Forms and Input Elements",
+          "type": "lesson",
+          "description": "Creating interactive forms with HTML"
+        },
+        {
+          "id": "unit1-assignment1",
+          "title": "Build Your First Webpage",
+          "type": "assignment",
+          "description": "Create a personal portfolio page using HTML"
+        },
+        {
+          "id": "unit1-quiz1",
+          "title": "HTML Basics Quiz",
+          "type": "quiz",
+          "description": "Test your knowledge of HTML fundamentals"
+        }
+      ]
+    },
+    {
+      "id": "unit-2",
+      "title": "Unit 2: CSS Styling",
+      "description": "Master the art of styling web pages with CSS",
+      "lessons": [
+        {
+          "id": "unit2-lesson1",
+          "title": "Introduction to CSS",
+          "type": "lesson",
+          "description": "Understanding CSS syntax and selectors"
+        },
+        {
+          "id": "unit2-lesson2",
+          "title": "Box Model and Layout",
+          "type": "lesson",
+          "description": "Learn about the CSS box model and page layouts"
+        },
+        {
+          "id": "unit2-lesson3",
+          "title": "Flexbox and Grid",
+          "type": "lesson",
+          "description": "Modern layout techniques with Flexbox and CSS Grid"
+        },
+        {
+          "id": "unit2-lesson4",
+          "title": "Responsive Design",
+          "type": "lesson",
+          "description": "Creating mobile-friendly responsive layouts"
+        },
+        {
+          "id": "unit2-assignment1",
+          "title": "Style Your Portfolio",
+          "type": "assignment",
+          "description": "Apply CSS styling to your HTML portfolio"
+        },
+        {
+          "id": "unit2-quiz1",
+          "title": "CSS Properties Quiz",
+          "type": "quiz",
+          "description": "Test your CSS knowledge"
+        }
+      ]
+    },
+    {
+      "id": "unit-3",
+      "title": "Unit 3: JavaScript Basics",
+      "description": "Add interactivity to your web pages with JavaScript",
+      "lessons": [
+        {
+          "id": "unit3-lesson1",
+          "title": "JavaScript Fundamentals",
+          "type": "lesson",
+          "description": "Variables, data types, and basic operators"
+        },
+        {
+          "id": "unit3-lesson2",
+          "title": "Functions and Scope",
+          "type": "lesson",
+          "description": "Understanding functions, parameters, and scope"
+        },
+        {
+          "id": "unit3-lesson3",
+          "title": "Arrays and Objects",
+          "type": "lesson",
+          "description": "Working with complex data structures"
+        },
+        {
+          "id": "unit3-lesson4",
+          "title": "DOM Manipulation",
+          "type": "lesson",
+          "description": "Interacting with HTML elements using JavaScript"
+        },
+        {
+          "id": "unit3-lesson5",
+          "title": "Events and Event Handlers",
+          "type": "lesson",
+          "description": "Handling user interactions with JavaScript"
+        },
+        {
+          "id": "unit3-assignment1",
+          "title": "Interactive Calculator",
+          "type": "assignment",
+          "description": "Build a functional calculator with JavaScript"
+        },
+        {
+          "id": "unit3-quiz1",
+          "title": "JavaScript Fundamentals Quiz",
+          "type": "quiz",
+          "description": "Test your JavaScript knowledge"
+        },
+        {
+          "id": "unit3-exam1",
+          "title": "Midterm Exam",
+          "type": "exam",
+          "description": "Comprehensive exam covering Units 1-3"
+        }
+      ]
+    },
+    {
+      "id": "unit-4",
+      "title": "Unit 4: Advanced JavaScript",
+      "description": "Deep dive into advanced JavaScript concepts",
+      "lessons": [
+        {
+          "id": "unit4-lesson1",
+          "title": "Asynchronous JavaScript",
+          "type": "lesson",
+          "description": "Promises, async/await, and AJAX"
+        },
+        {
+          "id": "unit4-lesson2",
+          "title": "ES6+ Features",
+          "type": "lesson",
+          "description": "Modern JavaScript features and syntax"
+        },
+        {
+          "id": "unit4-lesson3",
+          "title": "Local Storage and APIs",
+          "type": "lesson",
+          "description": "Working with browser storage and external APIs"
+        },
+        {
+          "id": "unit4-assignment1",
+          "title": "Weather App Project",
+          "type": "assignment",
+          "description": "Build a weather app using an API"
+        },
+        {
+          "id": "unit4-exam1",
+          "title": "Final Exam",
+          "type": "exam",
+          "description": "Comprehensive final exam covering all units"
+        }
+      ]
+    }
+  ]
+}
