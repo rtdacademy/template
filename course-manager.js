@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
+const prompts = require('prompts');
 
 // ANSI color codes for better CLI output
 const colors = {
@@ -1359,13 +1360,179 @@ function deleteFolderRecursive(folderPath) {
 }
 
 // Enhanced Interactive Mode
-function enhancedInteractiveMode() {
+async function enhancedInteractiveMode() {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
   });
   
-  console.log(`\n${colors.bright}${colors.magenta}📚 Enhanced Course Manager${colors.reset}\n`);
+  console.log(`\n${colors.bright}${colors.magenta}📚 Course Manager${colors.reset}\n`);
+
+  // New arrow-key interactive menu using 'prompts'
+  while (true) {
+    const main = await prompts({
+      type: 'select',
+      name: 'action',
+      message: 'Main Menu',
+      choices: [
+        { title: 'Content Management (Add/List content)', value: 'content' },
+        { title: 'Course Structure Management', value: 'structure' },
+        { title: 'Backup & Restore', value: 'backup' },
+        { title: 'Import & Export', value: 'importExport' },
+        { title: 'Exit', value: 'exit' },
+      ],
+      initial: 0
+    });
+
+    if (main.action === 'exit' || main.action === undefined) {
+      console.log(`\n${colors.green}Goodbye!${colors.reset}\n`);
+      return;
+    }
+
+    if (main.action === 'content') {
+      const cm = await prompts({
+        type: 'select',
+        name: 'choice',
+        message: 'Content Management',
+        choices: [
+          { title: 'Add a unit', value: 'addUnit' },
+          { title: 'Add a lesson', value: 'addLesson' },
+          { title: 'Add an assignment', value: 'addAssignment' },
+          { title: 'Add a quiz', value: 'addQuiz' },
+          { title: 'Add an exam', value: 'addExam' },
+          { title: 'List all content', value: 'list' },
+          { title: 'Back', value: 'back' },
+        ],
+        initial: 0
+      });
+
+      switch (cm.choice) {
+        case 'list':
+          listContent();
+          break;
+        case 'back':
+        case undefined:
+          break;
+        default:
+          console.log(`${colors.yellow}This action is not yet implemented in interactive mode. Use import/export for now.${colors.reset}`);
+      }
+      continue;
+    }
+
+    if (main.action === 'structure') {
+      const sm = await prompts({
+        type: 'select',
+        name: 'choice',
+        message: 'Course Structure Management',
+        choices: [
+          { title: 'Clear current structure (with backup)', value: 'clear' },
+          { title: 'Create original/default structure', value: 'original' },
+          { title: 'View current structure', value: 'view' },
+          { title: 'Back', value: 'back' },
+        ]
+      });
+
+      if (sm.choice === 'clear') {
+        const confirm = await prompts({ type: 'confirm', name: 'ok', message: 'Create backup and clear current structure?', initial: false });
+        if (confirm.ok) {
+          const backupName = createBackup('before-clear');
+          if (backupName) {
+            clearCourseStructure();
+            console.log(`${colors.green}Structure cleared. Backup saved as: before-clear${colors.reset}`);
+          }
+        }
+      } else if (sm.choice === 'original') {
+        createOriginalStructure();
+      } else if (sm.choice === 'view') {
+        listContent();
+      }
+      continue;
+    }
+
+    if (main.action === 'backup') {
+      const bm = await prompts({
+        type: 'select',
+        name: 'choice',
+        message: 'Backup & Restore',
+        choices: [
+          { title: 'Create backup', value: 'create' },
+          { title: 'Restore from backup', value: 'restore' },
+          { title: 'List available backups', value: 'list' },
+          { title: 'Back', value: 'back' },
+        ]
+      });
+
+      if (bm.choice === 'create') {
+        const name = await prompts({ type: 'text', name: 'n', message: 'Backup name (optional):' });
+        createBackup(name.n || null);
+      } else if (bm.choice === 'restore') {
+        const backups = listBackups();
+        if (backups.length > 0) {
+          const sel = await prompts({
+            type: 'select', name: 'b', message: 'Select backup to restore',
+            choices: backups.map((b) => ({ title: b, value: b }))
+          });
+          if (sel.b) {
+            const confirm = await prompts({ type: 'confirm', name: 'ok', message: `Restore from ${sel.b}?`, initial: false });
+            if (confirm.ok) restoreBackup(sel.b);
+          }
+        }
+      } else if (bm.choice === 'list') {
+        listBackups();
+      }
+      continue;
+    }
+
+    if (main.action === 'importExport') {
+      const available = listAvailableCourseStructures();
+      const im = await prompts({
+        type: 'select',
+        name: 'choice',
+        message: 'Import & Export',
+        choices: [
+          { title: 'Import course (merge)', value: 'importMerge' },
+          { title: 'Import course (clear existing first)', value: 'importClear' },
+          { title: 'Export current course', value: 'export' },
+          { title: 'Back', value: 'back' },
+        ]
+      });
+
+      if (im.choice === 'importMerge' || im.choice === 'importClear') {
+        const fileChoice = await prompts({
+          type: 'select',
+          name: 'file',
+          message: 'Select JSON file (or choose Manual Path)',
+          choices: [
+            ...available.map(f => ({ title: f, value: f })),
+            { title: 'Manual path...', value: '__manual__' }
+          ]
+        });
+        let filePath = fileChoice.file;
+        if (filePath === '__manual__') {
+          const manual = await prompts({ type: 'text', name: 'p', message: 'Enter path to JSON file:' });
+          filePath = manual.p;
+        }
+        if (filePath) {
+          const clear = im.choice === 'importClear';
+          if (clear) {
+            const confirm = await prompts({ type: 'confirm', name: 'ok', message: 'This will clear existing content. Proceed?', initial: false });
+            if (!confirm.ok) continue;
+          }
+          importCourse(filePath, clear);
+        }
+      } else if (im.choice === 'export') {
+        const out = await prompts({ type: 'text', name: 'f', message: 'Export filename (optional, .json will be added if missing):' });
+        let exportPath = out.f;
+        if (exportPath && !exportPath.endsWith('.json')) exportPath = exportPath + '.json';
+        if (exportPath) exportPath = path.join(COURSE_STRUCTURES_PATH, exportPath);
+        exportCourse(exportPath || null);
+      }
+      continue;
+    }
+  }
+
+  // Legacy numeric input mode (unreached because of early return above)
+  return;
   
   function showMainMenu() {
     console.log(`
@@ -1714,35 +1881,36 @@ function main() {
       break;
     case 'help':
       console.log(`
-${colors.bright}Enhanced Course Manager - Usage:${colors.reset}
+${colors.bright}Course Manager - Usage:${colors.reset}
 
 ${colors.cyan}Interactive mode:${colors.reset}
-  node course-manager-enhanced.js
-  node course-manager-enhanced.js interactive
+  node menu
+  node course-manager.js
+  node course-manager.js interactive
 
 ${colors.cyan}Backup & Restore:${colors.reset}
-  node course-manager-enhanced.js backup [backup-name]
-  node course-manager-enhanced.js restore <backup-name>
-  node course-manager-enhanced.js list-backups
+  node course-manager.js backup [backup-name]
+  node course-manager.js restore <backup-name>
+  node course-manager.js list-backups
 
 ${colors.cyan}Import & Export:${colors.reset}
-  node course-manager-enhanced.js export [filename]
-  node course-manager-enhanced.js import <file-path> [--clear]
+  node course-manager.js export [filename]
+  node course-manager.js import <file-path> [--clear]
 
 ${colors.cyan}Course Structure:${colors.reset}
-  node course-manager-enhanced.js clear
+  node course-manager.js clear
 
 ${colors.cyan}Examples:${colors.reset}
-  node course-manager-enhanced.js backup my-backup
-  node course-manager-enhanced.js restore my-backup
-  node course-manager-enhanced.js export my-course.json
-  node course-manager-enhanced.js import sample-course-structure.json
-  node course-manager-enhanced.js import new-course.json --clear
+  node course-manager.js backup my-backup
+  node course-manager.js restore my-backup
+  node course-manager.js export my-course.json
+  node course-manager.js import sample-course-structure.json
+  node course-manager.js import new-course.json --clear
       `);
       break;
     default:
       console.log(`${colors.red}Unknown command: ${command}${colors.reset}`);
-      console.log(`Use 'node course-manager-enhanced.js help' for usage information`);
+      console.log(`Use 'node course-manager.js help' for usage information`);
   }
 }
 
